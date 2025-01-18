@@ -1,0 +1,25 @@
+<Flask>
+import urllib.request
+import json
+
+with urllib.request.urlopen("https://jsonplaceholder.typicode.com/posts") as response:
+    data = response.read()
+    posts = json.loads(data)
+    output = posts[:5]
+    
+</Flask>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reactive Flask</title>
+    </head>
+    <body>
+        <h1>Python Embed Test</h1>
+        <p>Python code:</p>
+        <FlaskOutput></FlaskOutput>
+    </body>
+    </html>
+    
